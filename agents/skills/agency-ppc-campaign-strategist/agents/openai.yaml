@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ppc Campaign Strategist"
+  short_description: "Senior paid media strategist specializing in large-scale search…"
+  default_prompt: "Use $agency-ppc-campaign-strategist to help with: Senior paid media strategist specializing in large-scale search, shopping, and …"
+
+policy:
+  allow_implicit_invocation: true

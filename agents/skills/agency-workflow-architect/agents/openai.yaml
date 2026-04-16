@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workflow Architect"
+  short_description: "Workflow design specialist who maps complete workflow trees for…"
+  default_prompt: "Use $agency-workflow-architect to help with: Workflow design specialist who maps complete workflow trees for every system, u…"
+
+policy:
+  allow_implicit_invocation: true

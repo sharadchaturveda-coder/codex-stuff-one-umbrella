@@ -1,0 +1,7 @@
+interface:
+  display_name: "Narrative Designer"
+  short_description: "Story systems and dialogue architect - Masters GDD-aligned narr…"
+  default_prompt: "Use $agency-narrative-designer to help with: Story systems and dialogue architect - Masters GDD-aligned narrative design, br…"
+
+policy:
+  allow_implicit_invocation: true

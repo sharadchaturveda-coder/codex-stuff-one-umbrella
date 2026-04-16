@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tiktok Strategist"
+  short_description: "Expert TikTok marketing specialist focused on viral content cre…"
+  default_prompt: "Use $agency-tiktok-strategist to help with: Expert TikTok marketing specialist focused on viral content creation, algorithm…"
+
+policy:
+  allow_implicit_invocation: true

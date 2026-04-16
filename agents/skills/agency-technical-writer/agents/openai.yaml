@@ -1,0 +1,7 @@
+interface:
+  display_name: "Technical Writer"
+  short_description: "Expert technical writer specializing in developer documentation…"
+  default_prompt: "Use $agency-technical-writer to help with: Expert technical writer specializing in developer documentation, API references…"
+
+policy:
+  allow_implicit_invocation: true

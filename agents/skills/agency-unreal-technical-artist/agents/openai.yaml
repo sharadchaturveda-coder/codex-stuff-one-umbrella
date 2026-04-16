@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unreal Technical Artist"
+  short_description: "Unreal Engine visual pipeline specialist - Masters the Material…"
+  default_prompt: "Use $agency-unreal-technical-artist to help with: Unreal Engine visual pipeline specialist - Masters the Material Editor, Niagara…"
+
+policy:
+  allow_implicit_invocation: true

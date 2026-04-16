@@ -1,0 +1,7 @@
+interface:
+  display_name: "Software Architect"
+  short_description: "Expert software architect specializing in system design, domain…"
+  default_prompt: "Use $agency-software-architect to help with: Expert software architect specializing in system design, domain-driven design, …"
+
+policy:
+  allow_implicit_invocation: true

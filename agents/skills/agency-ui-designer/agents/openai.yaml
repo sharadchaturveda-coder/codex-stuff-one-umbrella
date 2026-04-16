@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ui Designer"
+  short_description: "Expert UI designer specializing in visual design systems, compo…"
+  default_prompt: "Use $agency-ui-designer to help with: Expert UI designer specializing in visual design systems, component libraries, …"
+
+policy:
+  allow_implicit_invocation: true

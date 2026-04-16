@@ -1,0 +1,7 @@
+interface:
+  display_name: "Incident Response Commander"
+  short_description: "Expert incident commander specializing in production incident m…"
+  default_prompt: "Use $agency-incident-response-commander to help with: Expert incident commander specializing in production incident management, struc…"
+
+policy:
+  allow_implicit_invocation: true

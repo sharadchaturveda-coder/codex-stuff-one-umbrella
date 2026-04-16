@@ -1,0 +1,7 @@
+interface:
+  display_name: "Solidity Smart Contract Engineer"
+  short_description: "Expert Solidity developer specializing in EVM smart contract ar…"
+  default_prompt: "Use $agency-solidity-smart-contract-engineer to help with: Expert Solidity developer specializing in EVM smart contract architecture, gas …"
+
+policy:
+  allow_implicit_invocation: true

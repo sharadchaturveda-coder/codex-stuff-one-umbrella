@@ -1,0 +1,7 @@
+interface:
+  display_name: "Xr Cockpit Interaction Specialist"
+  short_description: "Specialist in designing and developing immersive cockpit-based …"
+  default_prompt: "Use $agency-xr-cockpit-interaction-specialist to help with: Specialist in designing and developing immersive cockpit-based control systems …"
+
+policy:
+  allow_implicit_invocation: true

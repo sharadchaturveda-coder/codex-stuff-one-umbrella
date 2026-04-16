@@ -1,0 +1,7 @@
+interface:
+  display_name: "Image Prompt Engineer"
+  short_description: "Expert photography prompt engineer specializing in crafting det…"
+  default_prompt: "Use $agency-image-prompt-engineer to help with: Expert photography prompt engineer specializing in crafting detailed, evocative…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Accessibility Auditor"
+  short_description: "Expert accessibility specialist who audits interfaces against W…"
+  default_prompt: "Use $agency-accessibility-auditor to help with: Expert accessibility specialist who audits interfaces against WCAG standards, t…"
+
+policy:
+  allow_implicit_invocation: true

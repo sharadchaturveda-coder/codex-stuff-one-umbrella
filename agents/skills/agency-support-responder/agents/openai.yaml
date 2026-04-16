@@ -1,0 +1,7 @@
+interface:
+  display_name: "Support Responder"
+  short_description: "Expert customer support specialist delivering exceptional custo…"
+  default_prompt: "Use $agency-support-responder to help with: Expert customer support specialist delivering exceptional customer service, iss…"
+
+policy:
+  allow_implicit_invocation: true

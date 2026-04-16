@@ -1,0 +1,7 @@
+interface:
+  display_name: "Growth Hacker"
+  short_description: "Expert growth strategist specializing in rapid user acquisition…"
+  default_prompt: "Use $agency-growth-hacker to help with: Expert growth strategist specializing in rapid user acquisition through data-dr…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Database Optimizer"
+  short_description: "Expert database specialist focusing on schema design, query opt…"
+  default_prompt: "Use $agency-database-optimizer to help with: Expert database specialist focusing on schema design, query optimization, index…"
+
+policy:
+  allow_implicit_invocation: true

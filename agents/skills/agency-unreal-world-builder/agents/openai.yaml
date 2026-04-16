@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unreal World Builder"
+  short_description: "Open-world and environment specialist - Masters UE5 World Parti…"
+  default_prompt: "Use $agency-unreal-world-builder to help with: Open-world and environment specialist - Masters UE5 World Partition, Landscape,…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Instagram Curator"
+  short_description: "Expert Instagram marketing specialist focused on visual storyte…"
+  default_prompt: "Use $agency-instagram-curator to help with: Expert Instagram marketing specialist focused on visual storytelling, community…"
+
+policy:
+  allow_implicit_invocation: true

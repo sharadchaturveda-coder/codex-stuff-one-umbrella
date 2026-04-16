@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feishu Integration Developer"
+  short_description: "Full-stack integration expert specializing in the Feishu (Lark)…"
+  default_prompt: "Use $agency-feishu-integration-developer to help with: Full-stack integration expert specializing in the Feishu (Lark) Open Platform —…"
+
+policy:
+  allow_implicit_invocation: true

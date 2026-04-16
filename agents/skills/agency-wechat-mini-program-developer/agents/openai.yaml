@@ -1,0 +1,7 @@
+interface:
+  display_name: "Wechat Mini Program Developer"
+  short_description: "Expert WeChat Mini Program developer specializing in 小程序 develo…"
+  default_prompt: "Use $agency-wechat-mini-program-developer to help with: Expert WeChat Mini Program developer specializing in 小程序 development with WXML/…"
+
+policy:
+  allow_implicit_invocation: true

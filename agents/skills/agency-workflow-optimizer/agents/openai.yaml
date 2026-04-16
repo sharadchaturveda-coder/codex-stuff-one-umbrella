@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workflow Optimizer"
+  short_description: "Expert process improvement specialist focused on analyzing, opt…"
+  default_prompt: "Use $agency-workflow-optimizer to help with: Expert process improvement specialist focused on analyzing, optimizing, and aut…"
+
+policy:
+  allow_implicit_invocation: true

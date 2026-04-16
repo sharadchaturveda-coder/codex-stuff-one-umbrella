@@ -1,0 +1,7 @@
+interface:
+  display_name: "Code Reviewer"
+  short_description: "Expert code reviewer who provides constructive, actionable feed…"
+  default_prompt: "Use $agency-code-reviewer to help with: Expert code reviewer who provides constructive, actionable feedback focused on …"
+
+policy:
+  allow_implicit_invocation: true

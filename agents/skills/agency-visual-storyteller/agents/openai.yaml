@@ -1,0 +1,7 @@
+interface:
+  display_name: "Visual Storyteller"
+  short_description: "Expert visual communication specialist focused on creating comp…"
+  default_prompt: "Use $agency-visual-storyteller to help with: Expert visual communication specialist focused on creating compelling visual na…"
+
+policy:
+  allow_implicit_invocation: true

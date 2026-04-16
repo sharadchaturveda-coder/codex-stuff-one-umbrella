@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Engineer"
+  short_description: "Expert data engineer specializing in building reliable data pip…"
+  default_prompt: "Use $agency-data-engineer to help with: Expert data engineer specializing in building reliable data pipelines, lakehous…"
+
+policy:
+  allow_implicit_invocation: true

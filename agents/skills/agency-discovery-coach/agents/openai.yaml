@@ -1,0 +1,7 @@
+interface:
+  display_name: "Discovery Coach"
+  short_description: "Coaches sales teams on elite discovery methodology — question d…"
+  default_prompt: "Use $agency-discovery-coach to help with: Coaches sales teams on elite discovery methodology — question design, current-s…"
+
+policy:
+  allow_implicit_invocation: true

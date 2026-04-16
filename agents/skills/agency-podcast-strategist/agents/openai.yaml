@@ -1,0 +1,7 @@
+interface:
+  display_name: "Podcast Strategist"
+  short_description: "Content strategy and operations expert for the Chinese podcast …"
+  default_prompt: "Use $agency-podcast-strategist to help with: Content strategy and operations expert for the Chinese podcast market, with dee…"
+
+policy:
+  allow_implicit_invocation: true

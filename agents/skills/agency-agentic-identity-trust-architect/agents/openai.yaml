@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agentic Identity Trust Architect"
+  short_description: "Designs identity, authentication, and trust verification system…"
+  default_prompt: "Use $agency-agentic-identity-trust-architect to help with: Designs identity, authentication, and trust verification systems for autonomous…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Narratologist"
+  short_description: "Expert in narrative theory, story structure, character arcs, an…"
+  default_prompt: "Use $agency-narratologist to help with: Expert in narrative theory, story structure, character arcs, and literary analy…"
+
+policy:
+  allow_implicit_invocation: true

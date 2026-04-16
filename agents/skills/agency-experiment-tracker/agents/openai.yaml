@@ -1,0 +1,7 @@
+interface:
+  display_name: "Experiment Tracker"
+  short_description: "Expert project manager specializing in experiment design, execu…"
+  default_prompt: "Use $agency-experiment-tracker to help with: Expert project manager specializing in experiment design, execution tracking, a…"
+
+policy:
+  allow_implicit_invocation: true

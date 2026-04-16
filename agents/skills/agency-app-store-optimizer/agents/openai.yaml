@@ -1,0 +1,7 @@
+interface:
+  display_name: "App Store Optimizer"
+  short_description: "Expert app store marketing specialist focused on App Store Opti…"
+  default_prompt: "Use $agency-app-store-optimizer to help with: Expert app store marketing specialist focused on App Store Optimization (ASO), …"
+
+policy:
+  allow_implicit_invocation: true

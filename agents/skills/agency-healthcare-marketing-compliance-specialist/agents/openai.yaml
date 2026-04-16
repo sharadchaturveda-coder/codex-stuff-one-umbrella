@@ -1,0 +1,7 @@
+interface:
+  display_name: "Healthcare Marketing Compliance Specialist"
+  short_description: "Expert in healthcare marketing compliance in China, proficient …"
+  default_prompt: "Use $agency-healthcare-marketing-compliance-specialist to help with: Expert in healthcare marketing compliance in China, proficient in the Advertisi…"
+
+policy:
+  allow_implicit_invocation: true

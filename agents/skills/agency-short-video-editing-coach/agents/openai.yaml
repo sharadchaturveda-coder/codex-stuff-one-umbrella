@@ -1,0 +1,7 @@
+interface:
+  display_name: "Short Video Editing Coach"
+  short_description: "Hands-on short-video editing coach covering the full post-produ…"
+  default_prompt: "Use $agency-short-video-editing-coach to help with: Hands-on short-video editing coach covering the full post-production pipeline, …"
+
+policy:
+  allow_implicit_invocation: true

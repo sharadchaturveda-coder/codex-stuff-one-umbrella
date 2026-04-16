@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zhihu Strategist"
+  short_description: "Expert Zhihu marketing specialist focused on thought leadership…"
+  default_prompt: "Use $agency-zhihu-strategist to help with: Expert Zhihu marketing specialist focused on thought leadership, community cred…"
+
+policy:
+  allow_implicit_invocation: true

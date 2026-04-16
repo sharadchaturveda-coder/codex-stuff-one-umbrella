@@ -1,0 +1,7 @@
+interface:
+  display_name: "Proposal Strategist"
+  short_description: "Strategic proposal architect who transforms RFPs and sales oppo…"
+  default_prompt: "Use $agency-proposal-strategist to help with: Strategic proposal architect who transforms RFPs and sales opportunities into c…"
+
+policy:
+  allow_implicit_invocation: true

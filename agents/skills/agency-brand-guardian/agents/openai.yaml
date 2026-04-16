@@ -1,0 +1,7 @@
+interface:
+  display_name: "Brand Guardian"
+  short_description: "Expert brand strategist and guardian specializing in brand iden…"
+  default_prompt: "Use $agency-brand-guardian to help with: Expert brand strategist and guardian specializing in brand identity development…"
+
+policy:
+  allow_implicit_invocation: true

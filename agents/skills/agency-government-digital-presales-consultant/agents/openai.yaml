@@ -1,0 +1,7 @@
+interface:
+  display_name: "Government Digital Presales Consultant"
+  short_description: "Presales expert for China's government digital transformation m…"
+  default_prompt: "Use $agency-government-digital-presales-consultant to help with: Presales expert for China's government digital transformation market (ToG), pro…"
+
+policy:
+  allow_implicit_invocation: true

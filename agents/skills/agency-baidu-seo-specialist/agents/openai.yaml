@@ -1,0 +1,7 @@
+interface:
+  display_name: "Baidu Seo Specialist"
+  short_description: "Expert Baidu search optimization specialist focused on Chinese …"
+  default_prompt: "Use $agency-baidu-seo-specialist to help with: Expert Baidu search optimization specialist focused on Chinese search engine ra…"
+
+policy:
+  allow_implicit_invocation: true

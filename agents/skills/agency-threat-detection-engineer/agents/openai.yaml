@@ -1,0 +1,7 @@
+interface:
+  display_name: "Threat Detection Engineer"
+  short_description: "Expert detection engineer specializing in SIEM rule development…"
+  default_prompt: "Use $agency-threat-detection-engineer to help with: Expert detection engineer specializing in SIEM rule development, MITRE ATT&CK c…"
+
+policy:
+  allow_implicit_invocation: true

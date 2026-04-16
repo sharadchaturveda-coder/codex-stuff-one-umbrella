@@ -1,0 +1,7 @@
+interface:
+  display_name: "Twitter Engager"
+  short_description: "Expert Twitter marketing specialist focused on real-time engage…"
+  default_prompt: "Use $agency-twitter-engager to help with: Expert Twitter marketing specialist focused on real-time engagement, thought le…"
+
+policy:
+  allow_implicit_invocation: true

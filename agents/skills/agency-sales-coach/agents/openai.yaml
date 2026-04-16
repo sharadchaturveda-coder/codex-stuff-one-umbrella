@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sales Coach"
+  short_description: "Expert sales coaching specialist focused on rep development, pi…"
+  default_prompt: "Use $agency-sales-coach to help with: Expert sales coaching specialist focused on rep development, pipeline review fa…"
+
+policy:
+  allow_implicit_invocation: true

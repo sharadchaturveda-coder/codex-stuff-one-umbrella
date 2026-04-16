@@ -1,0 +1,7 @@
+interface:
+  display_name: "Senior Developer"
+  short_description: "Premium implementation specialist - Masters Laravel/Livewire/Fl…"
+  default_prompt: "Use $agency-senior-developer to help with: Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced C…"
+
+policy:
+  allow_implicit_invocation: true

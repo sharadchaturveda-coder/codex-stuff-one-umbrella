@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ai Data Remediation Engineer"
+  short_description: ""Specialist in self-healing data pipelines — uses air-gapped lo…"
+  default_prompt: "Use $agency-ai-data-remediation-engineer to help with: "Specialist in self-healing data pipelines — uses air-gapped local SLMs and sem…"
+
+policy:
+  allow_implicit_invocation: true

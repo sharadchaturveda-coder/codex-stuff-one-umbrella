@@ -1,0 +1,7 @@
+interface:
+  display_name: "Geographer"
+  short_description: "Expert in physical and human geography, climate systems, cartog…"
+  default_prompt: "Use $agency-geographer to help with: Expert in physical and human geography, climate systems, cartography, and spati…"
+
+policy:
+  allow_implicit_invocation: true

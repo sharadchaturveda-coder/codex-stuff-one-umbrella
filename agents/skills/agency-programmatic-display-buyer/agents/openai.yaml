@@ -1,0 +1,7 @@
+interface:
+  display_name: "Programmatic Display Buyer"
+  short_description: "Display advertising and programmatic media buying specialist co…"
+  default_prompt: "Use $agency-programmatic-display-buyer to help with: Display advertising and programmatic media buying specialist covering managed p…"
+
+policy:
+  allow_implicit_invocation: true

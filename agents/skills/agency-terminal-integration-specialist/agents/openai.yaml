@@ -1,0 +1,7 @@
+interface:
+  display_name: "Terminal Integration Specialist"
+  short_description: "Terminal emulation, text rendering optimization, and SwiftTerm …"
+  default_prompt: "Use $agency-terminal-integration-specialist to help with: Terminal emulation, text rendering optimization, and SwiftTerm integration for …"
+
+policy:
+  allow_implicit_invocation: true

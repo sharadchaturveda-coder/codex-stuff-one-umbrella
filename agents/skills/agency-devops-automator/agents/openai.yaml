@@ -1,0 +1,7 @@
+interface:
+  display_name: "Devops Automator"
+  short_description: "Expert DevOps engineer specializing in infrastructure automatio…"
+  default_prompt: "Use $agency-devops-automator to help with: Expert DevOps engineer specializing in infrastructure automation, CI/CD pipelin…"
+
+policy:
+  allow_implicit_invocation: true

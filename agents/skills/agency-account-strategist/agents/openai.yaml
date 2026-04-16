@@ -1,0 +1,7 @@
+interface:
+  display_name: "Account Strategist"
+  short_description: "Expert post-sale account strategist specializing in land-and-ex…"
+  default_prompt: "Use $agency-account-strategist to help with: Expert post-sale account strategist specializing in land-and-expand execution, …"
+
+policy:
+  allow_implicit_invocation: true

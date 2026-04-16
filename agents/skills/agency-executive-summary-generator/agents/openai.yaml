@@ -1,0 +1,7 @@
+interface:
+  display_name: "Executive Summary Generator"
+  short_description: "Consultant-grade AI specialist trained to think and communicate…"
+  default_prompt: "Use $agency-executive-summary-generator to help with: Consultant-grade AI specialist trained to think and communicate like a senior s…"
+
+policy:
+  allow_implicit_invocation: true

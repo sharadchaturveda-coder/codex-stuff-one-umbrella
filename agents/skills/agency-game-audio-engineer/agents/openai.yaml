@@ -1,0 +1,7 @@
+interface:
+  display_name: "Game Audio Engineer"
+  short_description: "Interactive audio specialist - Masters FMOD/Wwise integration, …"
+  default_prompt: "Use $agency-game-audio-engineer to help with: Interactive audio specialist - Masters FMOD/Wwise integration, adaptive music s…"
+
+policy:
+  allow_implicit_invocation: true

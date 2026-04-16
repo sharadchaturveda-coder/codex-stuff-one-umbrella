@@ -1,0 +1,7 @@
+interface:
+  display_name: "Finance Tracker"
+  short_description: "Expert financial analyst and controller specializing in financi…"
+  default_prompt: "Use $agency-finance-tracker to help with: Expert financial analyst and controller specializing in financial planning, bud…"
+
+policy:
+  allow_implicit_invocation: true

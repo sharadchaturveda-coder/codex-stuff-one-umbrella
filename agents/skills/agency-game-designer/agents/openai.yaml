@@ -1,0 +1,7 @@
+interface:
+  display_name: "Game Designer"
+  short_description: "Systems and mechanics architect - Masters GDD authorship, playe…"
+  default_prompt: "Use $agency-game-designer to help with: Systems and mechanics architect - Masters GDD authorship, player psychology, ec…"
+
+policy:
+  allow_implicit_invocation: true

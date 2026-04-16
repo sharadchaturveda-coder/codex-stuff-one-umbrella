@@ -1,0 +1,7 @@
+interface:
+  display_name: "Model Qa Specialist"
+  short_description: "Independent model QA expert who audits ML and statistical model…"
+  default_prompt: "Use $agency-model-qa-specialist to help with: Independent model QA expert who audits ML and statistical models end-to-end - f…"
+
+policy:
+  allow_implicit_invocation: true

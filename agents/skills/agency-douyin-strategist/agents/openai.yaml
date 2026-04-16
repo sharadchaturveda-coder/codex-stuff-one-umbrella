@@ -1,0 +1,7 @@
+interface:
+  display_name: "Douyin Strategist"
+  short_description: "Short-video marketing expert specializing in the Douyin platfor…"
+  default_prompt: "Use $agency-douyin-strategist to help with: Short-video marketing expert specializing in the Douyin platform, with deep exp…"
+
+policy:
+  allow_implicit_invocation: true

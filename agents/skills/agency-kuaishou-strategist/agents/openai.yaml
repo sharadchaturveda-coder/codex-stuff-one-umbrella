@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kuaishou Strategist"
+  short_description: "Expert Kuaishou marketing strategist specializing in short-vide…"
+  default_prompt: "Use $agency-kuaishou-strategist to help with: Expert Kuaishou marketing strategist specializing in short-video content for Ch…"
+
+policy:
+  allow_implicit_invocation: true

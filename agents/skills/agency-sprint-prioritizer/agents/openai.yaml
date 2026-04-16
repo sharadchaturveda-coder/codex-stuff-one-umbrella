@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sprint Prioritizer"
+  short_description: "Expert product manager specializing in agile sprint planning, f…"
+  default_prompt: "Use $agency-sprint-prioritizer to help with: Expert product manager specializing in agile sprint planning, feature prioritiz…"
+
+policy:
+  allow_implicit_invocation: true

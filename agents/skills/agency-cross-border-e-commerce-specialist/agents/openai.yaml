@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cross Border E Commerce Specialist"
+  short_description: "Full-funnel cross-border e-commerce strategist covering Amazon,…"
+  default_prompt: "Use $agency-cross-border-e-commerce-specialist to help with: Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada,…"
+
+policy:
+  allow_implicit_invocation: true

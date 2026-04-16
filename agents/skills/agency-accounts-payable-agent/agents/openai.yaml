@@ -1,0 +1,7 @@
+interface:
+  display_name: "Accounts Payable Agent"
+  short_description: "Autonomous payment processing specialist that executes vendor p…"
+  default_prompt: "Use $agency-accounts-payable-agent to help with: Autonomous payment processing specialist that executes vendor payments, contrac…"
+
+policy:
+  allow_implicit_invocation: true

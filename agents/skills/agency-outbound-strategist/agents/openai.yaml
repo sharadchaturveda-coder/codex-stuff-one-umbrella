@@ -1,0 +1,7 @@
+interface:
+  display_name: "Outbound Strategist"
+  short_description: "Signal-based outbound specialist who designs multi-channel pros…"
+  default_prompt: "Use $agency-outbound-strategist to help with: Signal-based outbound specialist who designs multi-channel prospecting sequence…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backend Architect"
+  short_description: "Senior backend architect specializing in scalable system design…"
+  default_prompt: "Use $agency-backend-architect to help with: Senior backend architect specializing in scalable system design, database archi…"
+
+policy:
+  allow_implicit_invocation: true

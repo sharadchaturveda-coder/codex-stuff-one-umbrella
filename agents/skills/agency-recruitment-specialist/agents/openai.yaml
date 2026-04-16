@@ -1,0 +1,7 @@
+interface:
+  display_name: "Recruitment Specialist"
+  short_description: "Expert recruitment operations and talent acquisition specialist…"
+  default_prompt: "Use $agency-recruitment-specialist to help with: Expert recruitment operations and talent acquisition specialist — skilled in Ch…"
+
+policy:
+  allow_implicit_invocation: true

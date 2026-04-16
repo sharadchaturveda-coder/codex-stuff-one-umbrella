@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Shepherd"
+  short_description: "Expert project manager specializing in cross-functional project…"
+  default_prompt: "Use $agency-project-shepherd to help with: Expert project manager specializing in cross-functional project coordination, t…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Jira Workflow Steward"
+  short_description: "Expert delivery operations specialist who enforces Jira-linked …"
+  default_prompt: "Use $agency-jira-workflow-steward to help with: Expert delivery operations specialist who enforces Jira-linked Git workflows, t…"
+
+policy:
+  allow_implicit_invocation: true

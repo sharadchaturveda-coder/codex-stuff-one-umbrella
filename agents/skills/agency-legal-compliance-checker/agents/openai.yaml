@@ -1,0 +1,7 @@
+interface:
+  display_name: "Legal Compliance Checker"
+  short_description: "Expert legal and compliance specialist ensuring business operat…"
+  default_prompt: "Use $agency-legal-compliance-checker to help with: Expert legal and compliance specialist ensuring business operations, data handl…"
+
+policy:
+  allow_implicit_invocation: true

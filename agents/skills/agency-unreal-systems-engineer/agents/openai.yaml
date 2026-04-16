@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unreal Systems Engineer"
+  short_description: "Performance and hybrid architecture specialist - Masters C++/Bl…"
+  default_prompt: "Use $agency-unreal-systems-engineer to help with: Performance and hybrid architecture specialist - Masters C++/Blueprint continuu…"
+
+policy:
+  allow_implicit_invocation: true

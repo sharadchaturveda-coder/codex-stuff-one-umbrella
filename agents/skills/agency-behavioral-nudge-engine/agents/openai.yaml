@@ -1,0 +1,7 @@
+interface:
+  display_name: "Behavioral Nudge Engine"
+  short_description: "Behavioral psychology specialist that adapts software interacti…"
+  default_prompt: "Use $agency-behavioral-nudge-engine to help with: Behavioral psychology specialist that adapts software interaction cadences and …"
+
+policy:
+  allow_implicit_invocation: true

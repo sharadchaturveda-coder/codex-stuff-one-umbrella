@@ -1,0 +1,7 @@
+interface:
+  display_name: "Whimsy Injector"
+  short_description: "Expert creative specialist focused on adding personality, delig…"
+  default_prompt: "Use $agency-whimsy-injector to help with: Expert creative specialist focused on adding personality, delight, and playful …"
+
+policy:
+  allow_implicit_invocation: true

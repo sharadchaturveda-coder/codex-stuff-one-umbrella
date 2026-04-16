@@ -1,0 +1,7 @@
+interface:
+  display_name: "Private Domain Operator"
+  short_description: "Expert in building enterprise WeChat (WeCom) private domain eco…"
+  default_prompt: "Use $agency-private-domain-operator to help with: Expert in building enterprise WeChat (WeCom) private domain ecosystems, with de…"
+
+policy:
+  allow_implicit_invocation: true

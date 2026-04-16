@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unity Multiplayer Engineer"
+  short_description: "Networked gameplay specialist - Masters Netcode for GameObjects…"
+  default_prompt: "Use $agency-unity-multiplayer-engineer to help with: Networked gameplay specialist - Masters Netcode for GameObjects, Unity Gaming S…"
+
+policy:
+  allow_implicit_invocation: true

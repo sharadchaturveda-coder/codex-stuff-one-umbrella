@@ -1,0 +1,7 @@
+interface:
+  display_name: "Analytics Reporter"
+  short_description: "Expert data analyst transforming raw data into actionable busin…"
+  default_prompt: "Use $agency-analytics-reporter to help with: Expert data analyst transforming raw data into actionable business insights. Cr…"
+
+policy:
+  allow_implicit_invocation: true

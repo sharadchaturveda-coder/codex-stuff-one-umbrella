@@ -1,0 +1,7 @@
+interface:
+  display_name: "Roblox Systems Scripter"
+  short_description: "Roblox platform engineering specialist - Masters Luau, the clie…"
+  default_prompt: "Use $agency-roblox-systems-scripter to help with: Roblox platform engineering specialist - Masters Luau, the client-server securi…"
+
+policy:
+  allow_implicit_invocation: true

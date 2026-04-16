@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unreal Multiplayer Architect"
+  short_description: "Unreal Engine networking specialist - Masters Actor replication…"
+  default_prompt: "Use $agency-unreal-multiplayer-architect to help with: Unreal Engine networking specialist - Masters Actor replication, GameMode/GameS…"
+
+policy:
+  allow_implicit_invocation: true

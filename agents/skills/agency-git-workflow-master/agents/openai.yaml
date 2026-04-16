@@ -1,0 +1,7 @@
+interface:
+  display_name: "Git Workflow Master"
+  short_description: "Expert in Git workflows, branching strategies, and version cont…"
+  default_prompt: "Use $agency-git-workflow-master to help with: Expert in Git workflows, branching strategies, and version control best practic…"
+
+policy:
+  allow_implicit_invocation: true

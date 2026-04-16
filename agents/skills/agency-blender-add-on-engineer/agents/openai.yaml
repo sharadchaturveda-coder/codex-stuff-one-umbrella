@@ -1,0 +1,7 @@
+interface:
+  display_name: "Blender Add On Engineer"
+  short_description: "Blender tooling specialist - Builds Python add-ons, asset valid…"
+  default_prompt: "Use $agency-blender-add-on-engineer to help with: Blender tooling specialist - Builds Python add-ons, asset validators, exporters…"
+
+policy:
+  allow_implicit_invocation: true

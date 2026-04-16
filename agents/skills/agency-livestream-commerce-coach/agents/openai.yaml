@@ -1,0 +1,7 @@
+interface:
+  display_name: "Livestream Commerce Coach"
+  short_description: "Veteran livestream e-commerce coach specializing in host traini…"
+  default_prompt: "Use $agency-livestream-commerce-coach to help with: Veteran livestream e-commerce coach specializing in host training and live room…"
+
+policy:
+  allow_implicit_invocation: true

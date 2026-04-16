@@ -1,0 +1,7 @@
+interface:
+  display_name: "Evidence Collector"
+  short_description: "Screenshot-obsessed, fantasy-allergic QA specialist - Default t…"
+  default_prompt: "Use $agency-evidence-collector to help with: Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 is…"
+
+policy:
+  allow_implicit_invocation: true

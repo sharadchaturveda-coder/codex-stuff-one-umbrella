@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paid Social Strategist"
+  short_description: "Cross-platform paid social advertising specialist covering Meta…"
+  default_prompt: "Use $agency-paid-social-strategist to help with: Cross-platform paid social advertising specialist covering Meta (Facebook/Insta…"
+
+policy:
+  allow_implicit_invocation: true

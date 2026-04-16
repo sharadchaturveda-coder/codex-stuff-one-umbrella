@@ -1,0 +1,134 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+TEMPLATE="$ROOT/config/codex.config.template.toml"
+TARGET="${CODEX_CONFIG_TARGET:-$HOME/.codex/config.toml}"
+CLAUDE_SKILLS_SOURCE="${CLAUDE_SKILLS_SOURCE:-$HOME/.claude/skills}"
+CODEX_SKILLS_TARGET="${CODEX_SKILLS_TARGET:-$HOME/.codex/skills}"
+LOCAL_BIN_DIR="${LOCAL_BIN_DIR:-$HOME/.local/bin}"
+AGENTS_SKILLS_TARGET="${AGENTS_SKILLS_TARGET:-$HOME/.agents/skills}"
+INSTALL_SUPERPOWERS="${INSTALL_SUPERPOWERS:-1}"
+SUPERPOWERS_REPO_URL="${SUPERPOWERS_REPO_URL:-https://github.com/obra/superpowers.git}"
+SUPERPOWERS_ROOT="${SUPERPOWERS_ROOT:-$HOME/.codex/superpowers}"
+SUPERPOWERS_SKILL_LINK="${SUPERPOWERS_SKILL_LINK:-$AGENTS_SKILLS_TARGET/superpowers}"
+
+mkdir -p "$(dirname "$TARGET")"
+mkdir -p "$CODEX_SKILLS_TARGET"
+mkdir -p "$LOCAL_BIN_DIR"
+mkdir -p "$AGENTS_SKILLS_TARGET"
+
+if [[ -f "$TARGET" ]]; then
+  backup="$TARGET.bak.$(date +%Y%m%d%H%M%S)"
+  cp "$TARGET" "$backup"
+  echo "Backed up existing config to $backup"
+fi
+
+python3 - "$TEMPLATE" "$TARGET" <<'PY'
+from pathlib import Path
+import re
+import sys
+
+template_path = Path(sys.argv[1])
+target_path = Path(sys.argv[2])
+
+template = template_path.read_text(encoding="utf-8")
+existing = target_path.read_text(encoding="utf-8") if target_path.exists() else ""
+
+patterns = [
+    r'(?ms)^model = ".*?"\n?',
+    r'(?ms)^developer_instructions = """\n.*?\n"""\n?',
+    r'(?ms)^model_reasoning_effort = ".*?"\n?',
+]
+
+for pattern in patterns:
+    existing = re.sub(pattern, "", existing)
+
+existing = existing.lstrip("\n")
+merged = template.rstrip() + "\n\n" + existing if existing else template.rstrip() + "\n"
+target_path.write_text(merged, encoding="utf-8")
+PY
+
+echo "Installed Codex config template to $TARGET"
+
+if [[ ! -d "$CLAUDE_SKILLS_SOURCE" ]]; then
+  echo "Skipped shared skill linking because $CLAUDE_SKILLS_SOURCE does not exist"
+  exit 0
+fi
+
+linked_count=0
+skipped_count=0
+
+for skill_dir in "$CLAUDE_SKILLS_SOURCE"/*; do
+  [[ -d "$skill_dir" ]] || continue
+  skill_name="$(basename "$skill_dir")"
+  target_link="$CODEX_SKILLS_TARGET/$skill_name"
+
+  if [[ -L "$target_link" ]]; then
+    current_target="$(readlink "$target_link")"
+    if [[ "$current_target" == "$skill_dir" ]]; then
+      skipped_count=$((skipped_count + 1))
+      continue
+    fi
+    backup="$target_link.bak.$(date +%Y%m%d%H%M%S)"
+    mv "$target_link" "$backup"
+    echo "Backed up existing Codex skill link $target_link to $backup"
+  elif [[ -e "$target_link" ]]; then
+    backup="$target_link.bak.$(date +%Y%m%d%H%M%S)"
+    mv "$target_link" "$backup"
+    echo "Backed up existing Codex skill path $target_link to $backup"
+  fi
+
+  ln -s "$skill_dir" "$target_link"
+  linked_count=$((linked_count + 1))
+done
+
+echo "Linked $linked_count shared skills from $CLAUDE_SKILLS_SOURCE into $CODEX_SKILLS_TARGET"
+if [[ "$skipped_count" -gt 0 ]]; then
+  echo "Left $skipped_count existing matching skill links untouched"
+fi
+
+if [[ "$INSTALL_SUPERPOWERS" == "1" ]]; then
+  if [[ -d "$SUPERPOWERS_ROOT/.git" ]]; then
+    git -C "$SUPERPOWERS_ROOT" pull --ff-only
+    echo "Updated Superpowers in $SUPERPOWERS_ROOT"
+  elif [[ -e "$SUPERPOWERS_ROOT" ]]; then
+    backup="$SUPERPOWERS_ROOT.bak.$(date +%Y%m%d%H%M%S)"
+    mv "$SUPERPOWERS_ROOT" "$backup"
+    echo "Backed up existing Superpowers path $SUPERPOWERS_ROOT to $backup"
+    git clone --depth 1 "$SUPERPOWERS_REPO_URL" "$SUPERPOWERS_ROOT"
+    echo "Installed Superpowers into $SUPERPOWERS_ROOT"
+  else
+    git clone --depth 1 "$SUPERPOWERS_REPO_URL" "$SUPERPOWERS_ROOT"
+    echo "Installed Superpowers into $SUPERPOWERS_ROOT"
+  fi
+
+  if [[ -L "$SUPERPOWERS_SKILL_LINK" ]]; then
+    current_target="$(readlink "$SUPERPOWERS_SKILL_LINK")"
+    if [[ "$current_target" != "$SUPERPOWERS_ROOT/skills" ]]; then
+      backup="$SUPERPOWERS_SKILL_LINK.bak.$(date +%Y%m%d%H%M%S)"
+      mv "$SUPERPOWERS_SKILL_LINK" "$backup"
+      echo "Backed up existing Superpowers skill link $SUPERPOWERS_SKILL_LINK to $backup"
+      ln -s "$SUPERPOWERS_ROOT/skills" "$SUPERPOWERS_SKILL_LINK"
+    fi
+  elif [[ -e "$SUPERPOWERS_SKILL_LINK" ]]; then
+    backup="$SUPERPOWERS_SKILL_LINK.bak.$(date +%Y%m%d%H%M%S)"
+    mv "$SUPERPOWERS_SKILL_LINK" "$backup"
+    echo "Backed up existing Superpowers skill path $SUPERPOWERS_SKILL_LINK to $backup"
+    ln -s "$SUPERPOWERS_ROOT/skills" "$SUPERPOWERS_SKILL_LINK"
+  else
+    ln -s "$SUPERPOWERS_ROOT/skills" "$SUPERPOWERS_SKILL_LINK"
+  fi
+
+  echo "Linked Superpowers skills into $SUPERPOWERS_SKILL_LINK"
+else
+  echo "Skipped Superpowers installation because INSTALL_SUPERPOWERS=$INSTALL_SUPERPOWERS"
+fi
+
+ln -sfn "$ROOT/bin/codexw" "$LOCAL_BIN_DIR/codexw"
+ln -sfn "$ROOT/bin/claudew" "$LOCAL_BIN_DIR/claudew"
+echo "Linked launchers into $LOCAL_BIN_DIR: codexw, claudew"
+
+PYTHONPATH="$ROOT/src" python3 -m codex_memory.cli sync-native-extension >/dev/null
+echo "Synced native Codex memory extension into $HOME/.codex/memories_extensions/codex-memory"

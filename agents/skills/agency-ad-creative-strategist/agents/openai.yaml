@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ad Creative Strategist"
+  short_description: "Paid media creative specialist focused on ad copywriting, RSA o…"
+  default_prompt: "Use $agency-ad-creative-strategist to help with: Paid media creative specialist focused on ad copywriting, RSA optimization, ass…"
+
+policy:
+  allow_implicit_invocation: true

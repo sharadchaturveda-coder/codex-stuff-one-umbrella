@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ai Citation Strategist"
+  short_description: "Expert in AI recommendation engine optimization (AEO/GEO) — aud…"
+  default_prompt: "Use $agency-ai-citation-strategist to help with: Expert in AI recommendation engine optimization (AEO/GEO) — audits brand visibi…"
+
+policy:
+  allow_implicit_invocation: true

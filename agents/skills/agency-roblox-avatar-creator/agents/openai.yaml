@@ -1,0 +1,7 @@
+interface:
+  display_name: "Roblox Avatar Creator"
+  short_description: "Roblox UGC and avatar pipeline specialist - Masters Roblox's av…"
+  default_prompt: "Use $agency-roblox-avatar-creator to help with: Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar system, UGC…"
+
+policy:
+  allow_implicit_invocation: true

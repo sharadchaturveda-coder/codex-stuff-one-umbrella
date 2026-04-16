@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ai Engineer"
+  short_description: "Expert AI/ML engineer specializing in machine learning model de…"
+  default_prompt: "Use $agency-ai-engineer to help with: Expert AI/ML engineer specializing in machine learning model development, deplo…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Xr Immersive Developer"
+  short_description: "Expert WebXR and immersive technology developer with specializa…"
+  default_prompt: "Use $agency-xr-immersive-developer to help with: Expert WebXR and immersive technology developer with specialization in browser-…"
+
+policy:
+  allow_implicit_invocation: true

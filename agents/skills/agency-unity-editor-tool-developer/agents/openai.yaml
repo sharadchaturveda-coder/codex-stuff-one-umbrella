@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unity Editor Tool Developer"
+  short_description: "Unity editor automation specialist - Masters custom EditorWindo…"
+  default_prompt: "Use $agency-unity-editor-tool-developer to help with: Unity editor automation specialist - Masters custom EditorWindows, PropertyDraw…"
+
+policy:
+  allow_implicit_invocation: true

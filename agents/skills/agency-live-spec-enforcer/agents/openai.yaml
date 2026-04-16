@@ -1,0 +1,7 @@
+interface:
+  display_name: "Live Spec Enforcer"
+  short_description: "Enforces a live implementation spec with active checklists and sub-checklists."
+  default_prompt: "Use $agency-live-spec-enforcer to keep implementation tied to a live spec with live checklists."
+
+policy:
+  allow_implicit_invocation: true

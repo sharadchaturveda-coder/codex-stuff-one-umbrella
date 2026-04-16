@@ -1,0 +1,7 @@
+interface:
+  display_name: "Historian"
+  short_description: "Expert in historical analysis, periodization, material culture,…"
+  default_prompt: "Use $agency-historian to help with: Expert in historical analysis, periodization, material culture, and historiogra…"
+
+policy:
+  allow_implicit_invocation: true

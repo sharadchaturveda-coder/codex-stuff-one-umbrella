@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mobile App Builder"
+  short_description: "Specialized mobile application developer with expertise in nati…"
+  default_prompt: "Use $agency-mobile-app-builder to help with: Specialized mobile application developer with expertise in native iOS/Android d…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mcp Builder"
+  short_description: "Expert Model Context Protocol developer who designs, builds, an…"
+  default_prompt: "Use $agency-mcp-builder to help with: Expert Model Context Protocol developer who designs, builds, and tests MCP serv…"
+
+policy:
+  allow_implicit_invocation: true

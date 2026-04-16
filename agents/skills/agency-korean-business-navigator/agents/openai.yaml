@@ -1,0 +1,7 @@
+interface:
+  display_name: "Korean Business Navigator"
+  short_description: "Korean business culture for foreign professionals — 품의 decision…"
+  default_prompt: "Use $agency-korean-business-navigator to help with: Korean business culture for foreign professionals — 품의 decision process, nunchi…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Psychologist"
+  short_description: "Expert in human behavior, personality theory, motivation, and c…"
+  default_prompt: "Use $agency-psychologist to help with: Expert in human behavior, personality theory, motivation, and cognitive pattern…"
+
+policy:
+  allow_implicit_invocation: true

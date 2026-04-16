@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feedback Synthesizer"
+  short_description: "Expert in collecting, analyzing, and synthesizing user feedback…"
+  default_prompt: "Use $agency-feedback-synthesizer to help with: Expert in collecting, analyzing, and synthesizing user feedback from multiple c…"
+
+policy:
+  allow_implicit_invocation: true

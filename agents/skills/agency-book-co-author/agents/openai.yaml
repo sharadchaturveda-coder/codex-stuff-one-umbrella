@@ -1,0 +1,7 @@
+interface:
+  display_name: "Book Co Author"
+  short_description: "Strategic thought-leadership book collaborator for founders, ex…"
+  default_prompt: "Use $agency-book-co-author to help with: Strategic thought-leadership book collaborator for founders, experts, and opera…"
+
+policy:
+  allow_implicit_invocation: true

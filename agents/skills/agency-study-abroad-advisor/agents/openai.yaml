@@ -1,0 +1,7 @@
+interface:
+  display_name: "Study Abroad Advisor"
+  short_description: "Full-spectrum study abroad planning expert covering the US, UK,…"
+  default_prompt: "Use $agency-study-abroad-advisor to help with: Full-spectrum study abroad planning expert covering the US, UK, Canada, Austral…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Developer"
+  short_description: "Expert frontend developer specializing in modern web technologi…"
+  default_prompt: "Use $agency-frontend-developer to help with: Expert frontend developer specializing in modern web technologies, React/Vue/An…"
+
+policy:
+  allow_implicit_invocation: true

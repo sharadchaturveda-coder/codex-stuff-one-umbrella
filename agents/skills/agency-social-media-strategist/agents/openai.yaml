@@ -1,0 +1,7 @@
+interface:
+  display_name: "Social Media Strategist"
+  short_description: "Expert social media strategist for LinkedIn, Twitter, and profe…"
+  default_prompt: "Use $agency-social-media-strategist to help with: Expert social media strategist for LinkedIn, Twitter, and professional platform…"
+
+policy:
+  allow_implicit_invocation: true

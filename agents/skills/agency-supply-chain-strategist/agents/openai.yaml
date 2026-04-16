@@ -1,0 +1,7 @@
+interface:
+  display_name: "Supply Chain Strategist"
+  short_description: "Expert supply chain management and procurement strategy special…"
+  default_prompt: "Use $agency-supply-chain-strategist to help with: Expert supply chain management and procurement strategy specialist — skilled in…"
+
+policy:
+  allow_implicit_invocation: true

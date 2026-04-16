@@ -1,0 +1,7 @@
+interface:
+  display_name: "Infrastructure Maintainer"
+  short_description: "Expert infrastructure specialist focused on system reliability,…"
+  default_prompt: "Use $agency-infrastructure-maintainer to help with: Expert infrastructure specialist focused on system reliability, performance opt…"
+
+policy:
+  allow_implicit_invocation: true

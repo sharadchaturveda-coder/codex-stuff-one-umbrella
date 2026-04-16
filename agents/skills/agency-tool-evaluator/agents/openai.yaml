@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tool Evaluator"
+  short_description: "Expert technology assessment specialist focused on evaluating, …"
+  default_prompt: "Use $agency-tool-evaluator to help with: Expert technology assessment specialist focused on evaluating, testing, and rec…"
+
+policy:
+  allow_implicit_invocation: true

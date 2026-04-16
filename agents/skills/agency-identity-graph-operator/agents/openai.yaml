@@ -1,0 +1,7 @@
+interface:
+  display_name: "Identity Graph Operator"
+  short_description: "Operates a shared identity graph that multiple AI agents resolv…"
+  default_prompt: "Use $agency-identity-graph-operator to help with: Operates a shared identity graph that multiple AI agents resolve against. Ensur…"
+
+policy:
+  allow_implicit_invocation: true

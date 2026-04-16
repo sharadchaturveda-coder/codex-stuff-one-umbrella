@@ -1,0 +1,7 @@
+interface:
+  display_name: "Rapid Prototyper"
+  short_description: "Specialized in ultra-fast proof-of-concept development and MVP …"
+  default_prompt: "Use $agency-rapid-prototyper to help with: Specialized in ultra-fast proof-of-concept development and MVP creation using e…"
+
+policy:
+  allow_implicit_invocation: true

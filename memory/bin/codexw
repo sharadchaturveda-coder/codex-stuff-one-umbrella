@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+export PYTHONPATH="$ROOT/src"
+
+exec python3 -m codex_memory.cli launch --cwd "$PWD" --codex-bin "${CODEX_BIN:-codex}" -- --dangerously-bypass-approvals-and-sandbox "$@"

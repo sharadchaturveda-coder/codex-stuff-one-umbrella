@@ -1,0 +1,7 @@
+interface:
+  display_name: "Roblox Experience Designer"
+  short_description: "Roblox platform UX and monetization specialist - Masters engage…"
+  default_prompt: "Use $agency-roblox-experience-designer to help with: Roblox platform UX and monetization specialist - Masters engagement loop design…"
+
+policy:
+  allow_implicit_invocation: true

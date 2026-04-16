@@ -1,0 +1,7 @@
+interface:
+  display_name: "Lsp Index Engineer"
+  short_description: "Language Server Protocol specialist building unified code intel…"
+  default_prompt: "Use $agency-lsp-index-engineer to help with: Language Server Protocol specialist building unified code intelligence systems …"
+
+policy:
+  allow_implicit_invocation: true

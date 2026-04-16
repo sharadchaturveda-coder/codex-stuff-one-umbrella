@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ux Researcher"
+  short_description: "Expert user experience researcher specializing in user behavior…"
+  default_prompt: "Use $agency-ux-researcher to help with: Expert user experience researcher specializing in user behavior analysis, usabi…"
+
+policy:
+  allow_implicit_invocation: true

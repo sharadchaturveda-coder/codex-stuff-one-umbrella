@@ -1,0 +1,7 @@
+interface:
+  display_name: "Godot Multiplayer Engineer"
+  short_description: "Godot 4 networking specialist - Masters the MultiplayerAPI, sce…"
+  default_prompt: "Use $agency-godot-multiplayer-engineer to help with: Godot 4 networking specialist - Masters the MultiplayerAPI, scene replication, …"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ux Architect"
+  short_description: "Technical architecture and UX specialist who provides developer…"
+  default_prompt: "Use $agency-ux-architect to help with: Technical architecture and UX specialist who provides developers with solid fou…"
+
+policy:
+  allow_implicit_invocation: true

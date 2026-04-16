@@ -1,0 +1,7 @@
+interface:
+  display_name: "Content Creator"
+  short_description: "Expert content strategist and creator for multi-platform campai…"
+  default_prompt: "Use $agency-content-creator to help with: Expert content strategist and creator for multi-platform campaigns. Develops ed…"
+
+policy:
+  allow_implicit_invocation: true

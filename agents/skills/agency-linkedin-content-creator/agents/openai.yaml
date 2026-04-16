@@ -1,0 +1,7 @@
+interface:
+  display_name: "Linkedin Content Creator"
+  short_description: "Expert LinkedIn content strategist focused on thought leadershi…"
+  default_prompt: "Use $agency-linkedin-content-creator to help with: Expert LinkedIn content strategist focused on thought leadership, personal bran…"
+
+policy:
+  allow_implicit_invocation: true

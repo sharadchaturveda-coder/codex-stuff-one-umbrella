@@ -1,0 +1,7 @@
+interface:
+  display_name: "Automation Governance Architect"
+  short_description: "Governance-first architect for business automations (n8n-first)…"
+  default_prompt: "Use $agency-automation-governance-architect to help with: Governance-first architect for business automations (n8n-first) who audits valu…"
+
+policy:
+  allow_implicit_invocation: true

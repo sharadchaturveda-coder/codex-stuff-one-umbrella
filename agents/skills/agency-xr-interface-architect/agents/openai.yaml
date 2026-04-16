@@ -1,0 +1,7 @@
+interface:
+  display_name: "Xr Interface Architect"
+  short_description: "Spatial interaction designer and interface strategist for immer…"
+  default_prompt: "Use $agency-xr-interface-architect to help with: Spatial interaction designer and interface strategist for immersive AR/VR/XR en…"
+
+policy:
+  allow_implicit_invocation: true

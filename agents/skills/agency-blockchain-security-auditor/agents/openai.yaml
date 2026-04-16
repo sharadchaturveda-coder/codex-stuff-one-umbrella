@@ -1,0 +1,7 @@
+interface:
+  display_name: "Blockchain Security Auditor"
+  short_description: "Expert smart contract security auditor specializing in vulnerab…"
+  default_prompt: "Use $agency-blockchain-security-auditor to help with: Expert smart contract security auditor specializing in vulnerability detection,…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Developer Advocate"
+  short_description: "Expert developer advocate specializing in building developer co…"
+  default_prompt: "Use $agency-developer-advocate to help with: Expert developer advocate specializing in building developer communities, creat…"
+
+policy:
+  allow_implicit_invocation: true

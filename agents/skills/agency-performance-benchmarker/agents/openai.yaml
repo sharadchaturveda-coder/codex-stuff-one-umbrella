@@ -1,0 +1,7 @@
+interface:
+  display_name: "Performance Benchmarker"
+  short_description: "Expert performance testing and optimization specialist focused …"
+  default_prompt: "Use $agency-performance-benchmarker to help with: Expert performance testing and optimization specialist focused on measuring, an…"
+
+policy:
+  allow_implicit_invocation: true

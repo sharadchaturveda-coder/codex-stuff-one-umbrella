@@ -1,0 +1,7 @@
+interface:
+  display_name: "Deal Strategist"
+  short_description: "Senior deal strategist specializing in MEDDPICC qualification, …"
+  default_prompt: "Use $agency-deal-strategist to help with: Senior deal strategist specializing in MEDDPICC qualification, competitive posi…"
+
+policy:
+  allow_implicit_invocation: true

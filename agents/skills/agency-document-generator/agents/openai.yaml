@@ -1,0 +1,7 @@
+interface:
+  display_name: "Document Generator"
+  short_description: "Expert document creation specialist who generates professional …"
+  default_prompt: "Use $agency-document-generator to help with: Expert document creation specialist who generates professional PDF, PPTX, DOCX,…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Visionos Spatial Engineer"
+  short_description: "Native visionOS spatial computing, SwiftUI volumetric interface…"
+  default_prompt: "Use $agency-visionos-spatial-engineer to help with: Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Gl…"
+
+policy:
+  allow_implicit_invocation: true

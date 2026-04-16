@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unity Architect"
+  short_description: "Data-driven modularity specialist - Masters ScriptableObjects, …"
+  default_prompt: "Use $agency-unity-architect to help with: Data-driven modularity specialist - Masters ScriptableObjects, decoupled system…"
+
+policy:
+  allow_implicit_invocation: true

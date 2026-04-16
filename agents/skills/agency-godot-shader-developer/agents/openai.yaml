@@ -1,0 +1,7 @@
+interface:
+  display_name: "Godot Shader Developer"
+  short_description: "Godot 4 visual effects specialist - Masters the Godot Shading L…"
+  default_prompt: "Use $agency-godot-shader-developer to help with: Godot 4 visual effects specialist - Masters the Godot Shading Language (GLSL-li…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sre Site Reliability Engineer"
+  short_description: "Expert site reliability engineer specializing in SLOs, error bu…"
+  default_prompt: "Use $agency-sre-site-reliability-engineer to help with: Expert site reliability engineer specializing in SLOs, error budgets, observabi…"
+
+policy:
+  allow_implicit_invocation: true

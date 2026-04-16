@@ -1,0 +1,7 @@
+interface:
+  display_name: "Corporate Training Designer"
+  short_description: "Expert in enterprise training system design and curriculum deve…"
+  default_prompt: "Use $agency-corporate-training-designer to help with: Expert in enterprise training system design and curriculum development — profic…"
+
+policy:
+  allow_implicit_invocation: true

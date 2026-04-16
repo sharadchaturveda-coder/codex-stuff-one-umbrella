@@ -1,0 +1,7 @@
+interface:
+  display_name: "Search Query Analyst"
+  short_description: "Specialist in search term analysis, negative keyword architectu…"
+  default_prompt: "Use $agency-search-query-analyst to help with: Specialist in search term analysis, negative keyword architecture, and query-to…"
+
+policy:
+  allow_implicit_invocation: true

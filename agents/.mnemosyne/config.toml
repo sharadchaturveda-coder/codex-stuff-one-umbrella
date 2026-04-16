@@ -1,0 +1,45 @@
+[general]
+project_root = "."
+ignore_patterns = [".git", "node_modules", "__pycache__", ".mnemosyne", "mnemosyne", "*.pyc", "*.lock", "*.min.js", "*.min.css", ".env", ".env.*", "*.pem", "*.key", "*.p12", "*.pfx", "*.jks", "*.keystore", "*.secret", "*.secrets", "id_rsa*", "id_ed25519*", "id_ecdsa*", "id_dsa*", ".ssh", "credentials.json", "credentials.yaml", "service-account*.json", "*.credential", ".netrc", ".npmrc", ".pypirc", ".docker/config.json", "*.htpasswd", "token.json", "*.token", ".git-credentials", ".aws", "*.tfvars", "package-lock.json"]
+max_file_size_kb = 512
+supported_extensions = [".py", ".js", ".ts", ".md", ".txt", ".json", ".yaml", ".yml", ".toml", ".sql", ".sh", ".html", ".css", ".jsx", ".tsx"]
+
+[chunking]
+max_chunk_tokens = 300
+min_chunk_tokens = 20
+overlap_lines = 3
+code_granularity = "function"
+
+[embedding]
+backend = "tfidf"
+tfidf_max_features = 10000
+tfidf_min_df = 1
+dense_dim = 384
+dense_weight = 0.3
+
+[compression]
+target_ratio = 0.4
+preserve_signatures = true
+preserve_docstrings = true
+collapse_imports = true
+collapse_boilerplate = true
+max_prune_ratio = 0.7
+strict_for_symbols = true
+
+[retrieval]
+bm25_weight = 0.4
+vector_weight = 0.4
+usage_weight = 0.2
+dense_weight = 0.3
+max_results = 20
+token_budget = 8000
+max_files = 0
+import_inject_threshold = 2
+
+[cache]
+capacity = 500
+ghost_capacity = 1000
+
+[analytics]
+decay_halflife_days = 7
+session_timeout_minutes = 30

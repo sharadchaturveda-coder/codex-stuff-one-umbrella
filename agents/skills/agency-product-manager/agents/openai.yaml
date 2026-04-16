@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Manager"
+  short_description: "Holistic product leader who owns the full product lifecycle — f…"
+  default_prompt: "Use $agency-product-manager to help with: Holistic product leader who owns the full product lifecycle — from discovery an…"
+
+policy:
+  allow_implicit_invocation: true

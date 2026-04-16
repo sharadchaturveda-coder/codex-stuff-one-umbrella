@@ -1,0 +1,7 @@
+interface:
+  display_name: "Xiaohongshu Specialist"
+  short_description: "Expert Xiaohongshu marketing specialist focused on lifestyle co…"
+  default_prompt: "Use $agency-xiaohongshu-specialist to help with: Expert Xiaohongshu marketing specialist focused on lifestyle content, trend-dri…"
+
+policy:
+  allow_implicit_invocation: true

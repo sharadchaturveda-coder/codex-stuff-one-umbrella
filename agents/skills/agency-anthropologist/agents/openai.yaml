@@ -1,0 +1,7 @@
+interface:
+  display_name: "Anthropologist"
+  short_description: "Expert in cultural systems, rituals, kinship, belief systems, a…"
+  default_prompt: "Use $agency-anthropologist to help with: Expert in cultural systems, rituals, kinship, belief systems, and ethnographic …"
+
+policy:
+  allow_implicit_invocation: true

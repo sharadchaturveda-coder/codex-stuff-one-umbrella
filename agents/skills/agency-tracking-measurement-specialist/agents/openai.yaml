@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tracking Measurement Specialist"
+  short_description: "Expert in conversion tracking architecture, tag management, and…"
+  default_prompt: "Use $agency-tracking-measurement-specialist to help with: Expert in conversion tracking architecture, tag management, and attribution mod…"
+
+policy:
+  allow_implicit_invocation: true

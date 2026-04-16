@@ -1,0 +1,7 @@
+interface:
+  display_name: "Inclusive Visuals Specialist"
+  short_description: "Representation expert who defeats systemic AI biases to generat…"
+  default_prompt: "Use $agency-inclusive-visuals-specialist to help with: Representation expert who defeats systemic AI biases to generate culturally acc…"
+
+policy:
+  allow_implicit_invocation: true

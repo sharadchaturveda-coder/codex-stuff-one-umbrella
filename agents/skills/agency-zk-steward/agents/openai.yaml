@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zk Steward"
+  short_description: "Knowledge-base steward in the spirit of Niklas Luhmann's Zettel…"
+  default_prompt: "Use $agency-zk-steward to help with: Knowledge-base steward in the spirit of Niklas Luhmann's Zettelkasten. Default …"
+
+policy:
+  allow_implicit_invocation: true

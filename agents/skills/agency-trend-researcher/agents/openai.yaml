@@ -1,0 +1,7 @@
+interface:
+  display_name: "Trend Researcher"
+  short_description: "Expert market intelligence analyst specializing in identifying …"
+  default_prompt: "Use $agency-trend-researcher to help with: Expert market intelligence analyst specializing in identifying emerging trends,…"
+
+policy:
+  allow_implicit_invocation: true

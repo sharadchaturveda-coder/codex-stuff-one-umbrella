@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agents Orchestrator"
+  short_description: "Autonomous pipeline manager that orchestrates the entire develo…"
+  default_prompt: "Use $agency-agents-orchestrator to help with: Autonomous pipeline manager that orchestrates the entire development workflow. …"
+
+policy:
+  allow_implicit_invocation: true

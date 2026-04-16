@@ -1,0 +1,7 @@
+interface:
+  display_name: "Api Tester"
+  short_description: "Expert API testing specialist focused on comprehensive API vali…"
+  default_prompt: "Use $agency-api-tester to help with: Expert API testing specialist focused on comprehensive API validation, performa…"
+
+policy:
+  allow_implicit_invocation: true

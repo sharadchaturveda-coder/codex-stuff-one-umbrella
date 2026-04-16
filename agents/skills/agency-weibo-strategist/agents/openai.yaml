@@ -1,0 +1,7 @@
+interface:
+  display_name: "Weibo Strategist"
+  short_description: "Full-spectrum operations expert for Sina Weibo, with deep exper…"
+  default_prompt: "Use $agency-weibo-strategist to help with: Full-spectrum operations expert for Sina Weibo, with deep expertise in trending…"
+
+policy:
+  allow_implicit_invocation: true

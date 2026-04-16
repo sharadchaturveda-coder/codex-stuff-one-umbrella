@@ -1,0 +1,7 @@
+interface:
+  display_name: "French Consulting Market Navigator"
+  short_description: "Navigate the French ESN/SI freelance ecosystem — margin models,…"
+  default_prompt: "Use $agency-french-consulting-market-navigator to help with: Navigate the French ESN/SI freelance ecosystem — margin models, platform mechan…"
+
+policy:
+  allow_implicit_invocation: true

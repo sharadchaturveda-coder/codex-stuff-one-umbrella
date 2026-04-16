@@ -1,0 +1,7 @@
+interface:
+  display_name: "China E Commerce Operator"
+  short_description: "Expert China e-commerce operations specialist covering Taobao, …"
+  default_prompt: "Use $agency-china-e-commerce-operator to help with: Expert China e-commerce operations specialist covering Taobao, Tmall, Pinduoduo…"
+
+policy:
+  allow_implicit_invocation: true

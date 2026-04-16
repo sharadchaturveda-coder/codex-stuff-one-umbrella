@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cultural Intelligence Strategist"
+  short_description: "CQ specialist that detects invisible exclusion, researches glob…"
+  default_prompt: "Use $agency-cultural-intelligence-strategist to help with: CQ specialist that detects invisible exclusion, researches global context, and …"
+
+policy:
+  allow_implicit_invocation: true

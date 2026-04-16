@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paid Media Auditor"
+  short_description: "Comprehensive paid media auditor who systematically evaluates G…"
+  default_prompt: "Use $agency-paid-media-auditor to help with: Comprehensive paid media auditor who systematically evaluates Google Ads, Micro…"
+
+policy:
+  allow_implicit_invocation: true

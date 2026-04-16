@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bilibili Content Strategist"
+  short_description: "Expert Bilibili marketing specialist focused on UP主 growth, dan…"
+  default_prompt: "Use $agency-bilibili-content-strategist to help with: Expert Bilibili marketing specialist focused on UP主 growth, danmaku culture mas…"
+
+policy:
+  allow_implicit_invocation: true

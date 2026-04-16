@@ -1,0 +1,7 @@
+interface:
+  display_name: "Pipeline Analyst"
+  short_description: "Revenue operations analyst specializing in pipeline health diag…"
+  default_prompt: "Use $agency-pipeline-analyst to help with: Revenue operations analyst specializing in pipeline health diagnostics, deal ve…"
+
+policy:
+  allow_implicit_invocation: true

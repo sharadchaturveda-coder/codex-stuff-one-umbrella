@@ -1,0 +1,7 @@
+interface:
+  display_name: "Studio Producer"
+  short_description: "Senior strategic leader specializing in high-level creative and…"
+  default_prompt: "Use $agency-studio-producer to help with: Senior strategic leader specializing in high-level creative and technical proje…"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Salesforce Architect"
+  short_description: "Solution architecture for Salesforce platform — multi-cloud des…"
+  default_prompt: "Use $agency-salesforce-architect to help with: Solution architecture for Salesforce platform — multi-cloud design, integration…"
+
+policy:
+  allow_implicit_invocation: true

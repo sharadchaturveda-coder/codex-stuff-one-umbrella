@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sales Engineer"
+  short_description: "Senior pre-sales engineer specializing in technical discovery, …"
+  default_prompt: "Use $agency-sales-engineer to help with: Senior pre-sales engineer specializing in technical discovery, demo engineering…"
+
+policy:
+  allow_implicit_invocation: true

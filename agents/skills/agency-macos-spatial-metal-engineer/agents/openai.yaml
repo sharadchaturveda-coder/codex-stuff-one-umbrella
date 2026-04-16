@@ -1,0 +1,7 @@
+interface:
+  display_name: "Macos Spatial Metal Engineer"
+  short_description: "Native Swift and Metal specialist building high-performance 3D …"
+  default_prompt: "Use $agency-macos-spatial-metal-engineer to help with: Native Swift and Metal specialist building high-performance 3D rendering system…"
+
+policy:
+  allow_implicit_invocation: true

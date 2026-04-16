@@ -1,0 +1,7 @@
+interface:
+  display_name: "Security Engineer"
+  short_description: "Expert application security engineer specializing in threat mod…"
+  default_prompt: "Use $agency-security-engineer to help with: Expert application security engineer specializing in threat modeling, vulnerabi…"
+
+policy:
+  allow_implicit_invocation: true

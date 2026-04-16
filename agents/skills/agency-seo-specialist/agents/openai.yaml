@@ -1,0 +1,7 @@
+interface:
+  display_name: "Seo Specialist"
+  short_description: "Expert search engine optimization strategist specializing in te…"
+  default_prompt: "Use $agency-seo-specialist to help with: Expert search engine optimization strategist specializing in technical SEO, con…"
+
+policy:
+  allow_implicit_invocation: true

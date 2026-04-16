@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reddit Community Builder"
+  short_description: "Expert Reddit marketing specialist focused on authentic communi…"
+  default_prompt: "Use $agency-reddit-community-builder to help with: Expert Reddit marketing specialist focused on authentic community engagement, v…"
+
+policy:
+  allow_implicit_invocation: true
