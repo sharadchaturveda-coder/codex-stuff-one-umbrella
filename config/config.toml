@@ -78,6 +78,8 @@ Use sub-agents autonomously when delegation will materially help. Parallel agent
 - No trailing summaries; the user can read the diff
 - Short, direct responses
 - Never truncate bash output — run commands raw
+- For local repo navigation and code discovery, prefer `rg` / `rg --files` first; use `fzf` when the local candidate set needs interactive narrowing.
+- Treat local terminal search as the default path before broader docs lookup or web research when the answer likely lives in checked-out code.
 
 ## Execution Discipline
 - Think before coding. Do not rush into implementation when scope, constraints, or success criteria are materially ambiguous.
