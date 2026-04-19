@@ -1,0 +1,7 @@
+interface:
+  display_name: "RTK Safe Usage"
+  short_description: "Optional explicit RTK usage for noisy command output only."
+  default_prompt: "Use $rtk-safe-usage only when noisy test/build/lint/log output justifies explicit RTK compression, and never for discovery or source inspection."
+
+policy:
+  allow_implicit_invocation: true

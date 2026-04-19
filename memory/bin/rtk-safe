@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+RTK_REPO="${RTK_REPO:-/home/dr_sharad/Global developer folder/rtk}"
+RTK_BIN="${RTK_BIN:-$RTK_REPO/.local-bin/rtk}"
+
+usage() {
+  cat <<'EOF'
+rtk-safe: explicit allowlisted wrapper for RTK
+
+Usage:
+  rtk-safe <command> [args...]
+
+Allowed command classes:
+  pytest
+  vitest
+  playwright test ...
+  cargo test|build|clippy ...
+  go test|build|vet ...
+  npm|pnpm|yarn test|build ...
+  next build ...
+  ruff check ...
+  eslint ...
+  tsc ...
+  golangci-lint run ...
+  log <file>
+
+Hard rule:
+  Do not use this wrapper for discovery or source inspection commands such as
+  rg, grep, cat, bat, find, fd, git diff, or git show.
+EOF
+}
+
+die() {
+  printf 'rtk-safe: %s\n' "$1" >&2
+  exit 1
+}
+
+require_bin() {
+  [[ -x "$RTK_BIN" ]] || die "RTK binary not found at $RTK_BIN. Keep RTK quarantined and invoke it only by explicit local path."
+}
+
+allow_exact() {
+  require_bin
+  exec "$RTK_BIN" "$@"
+}
+
+allow_subcommand() {
+  local root="$1"
+  local sub="$2"
+  shift 2
+  require_bin
+  exec "$RTK_BIN" "$root" "$sub" "$@"
+}
+
+(( $# > 0 )) || {
+  usage
+  exit 1
+}
+
+case "$1" in
+  -h|--help|help)
+    usage
+    exit 0
+    ;;
+  pytest|vitest|eslint|tsc|log)
+    allow_exact "$@"
+    ;;
+  playwright)
+    [[ $# -ge 2 && "$2" == "test" ]] || die "only 'playwright test' is allowlisted"
+    allow_exact "$@"
+    ;;
+  cargo)
+    [[ $# -ge 2 ]] || die "missing cargo subcommand"
+    case "$2" in
+      test|build|clippy) allow_subcommand cargo "$2" "${@:3}" ;;
+      *) die "cargo subcommand '$2' is not allowlisted" ;;
+    esac
+    ;;
+  go)
+    [[ $# -ge 2 ]] || die "missing go subcommand"
+    case "$2" in
+      test|build|vet) allow_subcommand go "$2" "${@:3}" ;;
+      *) die "go subcommand '$2' is not allowlisted" ;;
+    esac
+    ;;
+  npm|pnpm|yarn)
+    [[ $# -ge 2 ]] || die "missing package-manager subcommand"
+    case "$2" in
+      test|build) allow_exact "$@" ;;
+      *) die "$1 subcommand '$2' is not allowlisted" ;;
+    esac
+    ;;
+  next)
+    [[ $# -ge 2 && "$2" == "build" ]] || die "only 'next build' is allowlisted"
+    allow_exact "$@"
+    ;;
+  ruff)
+    [[ $# -ge 2 && "$2" == "check" ]] || die "only 'ruff check' is allowlisted"
+    allow_exact "$@"
+    ;;
+  golangci-lint)
+    [[ $# -ge 2 && "$2" == "run" ]] || die "only 'golangci-lint run' is allowlisted"
+    allow_exact "$@"
+    ;;
+  rg|grep|cat|bat|sed|find|fd)
+    die "'$1' is a protected discovery/source-inspection command and must stay raw"
+    ;;
+  git)
+    if [[ $# -ge 2 ]]; then
+      case "$2" in
+        diff|show) die "'git $2' is protected and must stay raw" ;;
+      esac
+    fi
+    die "git is not allowlisted through rtk-safe"
+    ;;
+  *)
+    die "command '$1' is not allowlisted"
+    ;;
+esac
