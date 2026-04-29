@@ -32,18 +32,17 @@ Under the hood, the launcher:
 This gives Codex a compact baseline identity, policy, wake state, and summary
 pack at session start.
 
-For machine setup, `bin/install-codex-config` should also expose shared skills
-to Codex by symlinking `~/.claude/skills` into `~/.codex/skills`. The memory
-sidecar should not duplicate SKILL files; it should make the shared skill
-library visible and then let activation packs augment the routed choice. It
-should also install the `codexw` and `claudew` launchers into `~/.local/bin` so
-both harnesses are callable immediately on a fresh machine.
+For machine setup, `bin/install-codex-config` should expose only the compact
+Codex preload anchors in `~/.codex/skills`: `lessons`, `skill-router`, and
+`create-skill` by default. The full shared skill library should stay on disk and
+be reached through `skill-router`/`skill-tree` only when the current task
+requires it. It should also install the `codexw` and `claudew` launchers into
+`~/.local/bin` so both harnesses are callable immediately on a fresh machine.
 
-For Codex native skill discovery beyond the shared Claude skill set,
-`bin/install-codex-config` should also install or update the `Superpowers`
-repository into `~/.codex/superpowers` and symlink its `skills/` directory into
-`~/.agents/skills/superpowers`. That keeps the portable machine bootstrap in
-one tracked repo while still using the upstream Superpowers source of truth.
+Do not install large external skill libraries into Codex native discovery by
+default. Superpowers can still be installed explicitly with
+`INSTALL_SUPERPOWERS=1`, but the default harness path keeps baseline context
+small and routes specialty skills on demand.
 
 On Codex `0.120.0+`, the native extension export gives the built-in
 consolidation agent a curated memory source to read during summarization. The

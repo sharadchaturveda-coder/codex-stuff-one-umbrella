@@ -151,16 +151,18 @@ Install the tracked Codex harness config onto a machine:
 /home/dr_sharad/codex-memory/bin/install-codex-config
 ```
 
-That installer also symlinks shared skills from `~/.claude/skills` into
-`~/.codex/skills` so Codex can see the same global skill library on a fresh
-machine. It also installs or updates `Superpowers` into `~/.codex/superpowers`,
-links its skills into `~/.agents/skills/superpowers` for Codex native skill
-discovery, and links `codexw` and `claudew` into `~/.local/bin`.
+That installer symlinks only Codex preload anchors from `~/.claude/skills` into
+`~/.codex/skills` so future sessions keep a compact skills context. The default
+preload set is `lessons skill-router create-skill`; broader discovery should go
+through `skill-router` and `skill-tree`, then open only the specific skill files
+needed for the current task. It also links `codexw` and `claudew` into
+`~/.local/bin`.
 
 Override the defaults with `CLAUDE_SKILLS_SOURCE`, `CODEX_SKILLS_TARGET`,
 `AGENTS_SKILLS_TARGET`, `LOCAL_BIN_DIR`, `CODEX_CONFIG_TARGET`,
-`SUPERPOWERS_REPO_URL`, `SUPERPOWERS_ROOT`, `SUPERPOWERS_SKILL_LINK`, or set
-`INSTALL_SUPERPOWERS=0` if your paths differ or you want to skip that install.
+`CODEX_PRELOAD_SKILLS`, `SUPERPOWERS_REPO_URL`, `SUPERPOWERS_ROOT`,
+`SUPERPOWERS_SKILL_LINK`, or set `INSTALL_SUPERPOWERS=1` if you explicitly want
+to install Superpowers into Codex native skill discovery.
 
 It also syncs a native Codex memory extension into:
 

@@ -7,9 +7,10 @@ TEMPLATE="$ROOT/config/codex.config.template.toml"
 TARGET="${CODEX_CONFIG_TARGET:-$HOME/.codex/config.toml}"
 CLAUDE_SKILLS_SOURCE="${CLAUDE_SKILLS_SOURCE:-$HOME/.claude/skills}"
 CODEX_SKILLS_TARGET="${CODEX_SKILLS_TARGET:-$HOME/.codex/skills}"
+CODEX_PRELOAD_SKILLS="${CODEX_PRELOAD_SKILLS:-lessons skill-router create-skill}"
 LOCAL_BIN_DIR="${LOCAL_BIN_DIR:-$HOME/.local/bin}"
 AGENTS_SKILLS_TARGET="${AGENTS_SKILLS_TARGET:-$HOME/.agents/skills}"
-INSTALL_SUPERPOWERS="${INSTALL_SUPERPOWERS:-1}"
+INSTALL_SUPERPOWERS="${INSTALL_SUPERPOWERS:-0}"
 SUPERPOWERS_REPO_URL="${SUPERPOWERS_REPO_URL:-https://github.com/obra/superpowers.git}"
 SUPERPOWERS_ROOT="${SUPERPOWERS_ROOT:-$HOME/.codex/superpowers}"
 SUPERPOWERS_SKILL_LINK="${SUPERPOWERS_SKILL_LINK:-$AGENTS_SKILLS_TARGET/superpowers}"
@@ -57,18 +58,23 @@ if [[ ! -d "$CLAUDE_SKILLS_SOURCE" ]]; then
   exit 0
 fi
 
-linked_count=0
-skipped_count=0
+find "$CODEX_SKILLS_TARGET" -mindepth 1 -maxdepth 1 -type l -delete
 
-for skill_dir in "$CLAUDE_SKILLS_SOURCE"/*; do
-  [[ -d "$skill_dir" ]] || continue
-  skill_name="$(basename "$skill_dir")"
+linked_count=0
+missing_count=0
+
+for skill_name in $CODEX_PRELOAD_SKILLS; do
+  skill_dir="$CLAUDE_SKILLS_SOURCE/$skill_name"
+  if [[ ! -d "$skill_dir" ]]; then
+    echo "Skipped Codex preload skill $skill_name because $skill_dir does not exist"
+    missing_count=$((missing_count + 1))
+    continue
+  fi
   target_link="$CODEX_SKILLS_TARGET/$skill_name"
 
   if [[ -L "$target_link" ]]; then
     current_target="$(readlink "$target_link")"
     if [[ "$current_target" == "$skill_dir" ]]; then
-      skipped_count=$((skipped_count + 1))
       continue
     fi
     backup="$target_link.bak.$(date +%Y%m%d%H%M%S)"
@@ -84,9 +90,9 @@ for skill_dir in "$CLAUDE_SKILLS_SOURCE"/*; do
   linked_count=$((linked_count + 1))
 done
 
-echo "Linked $linked_count shared skills from $CLAUDE_SKILLS_SOURCE into $CODEX_SKILLS_TARGET"
-if [[ "$skipped_count" -gt 0 ]]; then
-  echo "Left $skipped_count existing matching skill links untouched"
+echo "Linked $linked_count Codex preload skills from $CLAUDE_SKILLS_SOURCE into $CODEX_SKILLS_TARGET"
+if [[ "$missing_count" -gt 0 ]]; then
+  echo "Skipped $missing_count missing Codex preload skills"
 fi
 
 if [[ "$INSTALL_SUPERPOWERS" == "1" ]]; then

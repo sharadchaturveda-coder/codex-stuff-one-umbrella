@@ -47,7 +47,7 @@ What it enforces:
 
 | Tool | Location | Skills |
 |---|---|---|
-| **Codex CLI** | `~/.codex/skills/` | All 170 (auto-invoked) |
+| **Codex CLI** | repo-local `agents/skills/` | Router-invoked on demand |
 | **Claude Code** | `~/.claude/agents/` | 149 agency agents |
 
 ---
