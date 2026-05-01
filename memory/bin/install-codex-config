@@ -58,7 +58,30 @@ if [[ ! -d "$CLAUDE_SKILLS_SOURCE" ]]; then
   exit 0
 fi
 
-find "$CODEX_SKILLS_TARGET" -mindepth 1 -maxdepth 1 -type l -delete
+declare -A preload_skill_set=()
+for skill_name in $CODEX_PRELOAD_SKILLS; do
+  preload_skill_set["$skill_name"]=1
+done
+
+archive_root="${CODEX_SKILLS_ARCHIVE:-$(dirname "$CODEX_SKILLS_TARGET")/skills-archive}"
+archive_dir="$archive_root/archived.$(date +%Y%m%d%H%M%S)"
+archived_count=0
+
+for existing_path in "$CODEX_SKILLS_TARGET"/*; do
+  [[ -e "$existing_path" || -L "$existing_path" ]] || continue
+  existing_name="$(basename "$existing_path")"
+  if [[ "$existing_name" == ".system" || -n "${preload_skill_set[$existing_name]:-}" ]]; then
+    continue
+  fi
+
+  mkdir -p "$archive_dir"
+  mv "$existing_path" "$archive_dir/"
+  archived_count=$((archived_count + 1))
+done
+
+if [[ "$archived_count" -gt 0 ]]; then
+  echo "Archived $archived_count non-preload Codex skill paths to $archive_dir"
+fi
 
 linked_count=0
 missing_count=0

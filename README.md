@@ -2,6 +2,8 @@
 
 One repo for the full Codex harness.
 
+The user's workstation operating model for this harness lives in [AGENT_FIRST_WORKSTATION.md](AGENT_FIRST_WORKSTATION.md).
+
 ## Structure
 
 ```
@@ -14,6 +16,7 @@ config/     — config.toml: Codex config with Vex persona + developer instructi
 
 Low-token sidecar memory system. Stores structured facts, activation packs, and journals.
 See `memory/README.md` for full docs.
+Workstation-memory notes for fresh installs live in `memory/docs/workstation-memory.md`.
 
 ## agents/
 
