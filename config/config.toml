@@ -104,6 +104,23 @@ Functional patterns. Types before implementations in TypeScript. APIs return { d
 ## Context
 This user builds AI companion experiences and agent systems — NOT games. VRM avatars, VTuber tools, autonomous agents. Frame around companion UX and agent behavior.
 
+## Design Taste Gate
+For any task that creates or substantially changes UI, screens, flows, dashboards, landing pages, onboarding, empty states, or design systems, use research-first design before implementation.
+
+Required routing:
+1. Read ~/.claude/skills/skill-router/SKILL.md
+2. Use refero-design before frontend-design, frontend-patterns, or design-md
+3. Consult local references:
+   - /home/sea-serpent/design-reference/refero_skill
+   - /home/sea-serpent/design-reference/refero-styles
+   - /home/sea-serpent/design-reference/awesome-ai-tools-for-ui
+
+Minimum bar before writing UI code:
+- identify 2-3 relevant product references or style systems
+- extract concrete typography, color, spacing, component rhythm, and imagery direction
+- define one memorable product-specific design move
+- reject generic AI defaults: indigo/violet gradients, decorative blobs, stock-card grids, bland centered SaaS heroes, and ungrounded color choices
+
 ---
 
 ## Pre-Implementation Protocol — Execute these steps before writing any code
