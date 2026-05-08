@@ -17,7 +17,9 @@ The user talks to agents through terminal-based CLI chat surfaces. Agents are th
 ## Core Rules
 
 - Prefer terminal-native control surfaces: CLI commands, scripts, and APIs.
+- Prefer CLIs over MCPs whenever both can do the job.
 - Treat browser and GUI interaction as reluctant fallback paths only.
+- Never use GUI browsers, Chrome, Firefox, or browser windows for testing. Use terminal commands, direct APIs, logs, test runners, and browser CLI tools instead.
 - Prefer host-native repo access and host-native tools.
 - Do not recommend Docker by default. This workstation is intentionally host-native because container boundaries usually reduce agent throughput.
 - Optimize for agent clarity, stable paths, shared tooling, and low-friction execution.
@@ -27,9 +29,9 @@ The user talks to agents through terminal-based CLI chat surfaces. Agents are th
 
 The primary harness homes on the user's machine are:
 
-- Claude: `/home/dr_sharad/everything-claude-code`
-- Codex: `/home/dr_sharad/codex-stuff-one-umbrella`
-- Gemini: `/home/dr_sharad/gemini-ultimate-harness`
+- Claude: `/home/sea-serpent/.claude`
+- Codex: `/home/sea-serpent/codex-stuff-one-umbrella`
+- Gemini: `/home/sea-serpent/dev-projects/gemini-ultimate-harness`
 
 ## Mental Model
 

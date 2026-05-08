@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RTK_REPO="${RTK_REPO:-/home/dr_sharad/Global developer folder/rtk}"
+RTK_REPO="${RTK_REPO:-$HOME/Global developer folder/rtk}"
 RTK_BIN="${RTK_BIN:-$RTK_REPO/.local-bin/rtk}"
 
 usage() {
